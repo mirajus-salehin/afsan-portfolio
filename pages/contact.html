@@ -19,7 +19,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                 </svg>
-                <span class="font-bold px-2 md:px-4">Afsan Sarwer</span>
+                <span class="font-bold text-lg px-2 md:px-4">Afsan Sarwer</span>
             </div>
 
             <div class="hidden md:flex space-x-4 py-2">
@@ -40,7 +40,7 @@
 
         <!---mobil menu-->
         <div class="mobile-menu hidden md:hidden mr-2 transition-all ease-out duration-500">
-            <a href="#" class="block py-5 px-3">About me</a>
+            <a href="../index.html" class="block py-5 px-3">About me</a>
             <a href="#" class="block py-5 px-3">Works</a>
             <a href="#" class="block py-5 px-3">Contact
                 me</a>
@@ -51,32 +51,90 @@
 
     <!--body-->
     <div class="mx-auto">
-        <div class="py-10">
+        <div class="py-10 grid grid-cols-1 gap-y-4">
             <p class="mx-auto text-center font-bold text-4xl">
+                Get in touch with me
+            </p>
+            <p class="text-center mt-8 md:px-6">
+                Are you planning to make a logo,business card of your own?
+            </p>
+            <button
+                class="mx-auto mt-4 md:mt-12 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full w-32 transform duration-100">
                 Contact me
-            </p>
-            <p class="text-center">
-                Got any idea
-            </p>
+            </button>
         </div>
-        <div class="md:flex space-4 justify-around w-1/2 mx-auto">
-            <div class="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-around">
-                <img src="../assets/social/instagram-logo.svg" alt="">
+
+        <div class="mx-auto max-w-4xl grid grid-cols-3 place-content-center auto-cols-max gap-4 p-6">
+            <div class="container">
+                <div
+                    class="mx-auto h-20 w-20 rounded-full bg-gray-200 flex items-center justify-around hover:shadow-md transition duration-100">
+                    <img src="../assets/social/instagram-logo.svg" alt="" class="h-8">
+                </div>
+                <div class="mx-auto text-center mt-3">
+                    <p class="text-black font-semibold">
+                        Instagram
+                    </p>
+                </div>
             </div>
-            <div class="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-around">
-                <img src="../assets/social/instagram-logo.svg" alt="">
+            <div class="container">
+                <div
+                    class="mx-auto h-20 w-20 rounded-full bg-gray-200 flex items-center justify-around hover:shadow-md transition duration-100">
+                    <img src="../assets/social/facebook-logo.svg" alt="" class="h-8">
+                </div>
+                <div class="mx-auto text-center mt-3">
+                    <p class="text-black font-semibold">
+                        Facebook
+                    </p>
+                </div>
             </div>
-            <div class="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-around">
-                <img src="../assets/social/instagram-logo.svg" alt="">
-            </div>
-            <div class="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-around">
-                <img src="../assets/social/instagram-logo.svg" alt="">
-            </div>
-            <div class="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-around">
-                <img src="../assets/social/instagram-logo.svg" alt="">
+            <div class="container">
+                <div
+                    class="mx-auto h-20 w-20 rounded-full bg-gray-200 flex items-center justify-around hover:shadow-md transition duration-100">
+                    <img src="../assets/social/linkedin-logo.svg" alt="" class="h-8">
+                </div>
+                <div class="mx-auto text-center mt-3">
+                    <p class="text-black font-semibold">
+                        Linked in
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    <section class="max-w-xl mx-auto px-5 md:px-0">
+        <div class="mt-6 mb-6">
+            <div class="items-center -mx-2 md:flex">
+                <div class="w-full mx-2">
+                    <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">Name</label>
+
+                    <input
+                        class="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-gray-500 focus:outline-none"
+                        type="text">
+                </div>
+
+                <div class="w-full mx-2 mt-4 md:mt-0">
+                    <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">E-mail</label>
+
+                    <input
+                        class="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-gray-500 focus:outline-none"
+                        type="email">
+                </div>
+            </div>
+
+            <div class="w-full mt-4">
+                <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200">Message</label>
+
+                <textarea
+                    class="block w-full h-40 px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-gray-500 focus:outline-none"></textarea>
+            </div>
+
+            <div class="flex justify-center mt-6">
+                <button
+                    class="px-4 py-2 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Send
+                    Message</button>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
