@@ -43,10 +43,10 @@
             </div>
 
             <div class="hidden md:flex space-x-4 py-2">
-                <a href="#" class="py-5 px-3 md:mx-5 text-gray-600 hover:text-black transition duration-200">About
+                <a href="../index.html" class="nav-item">About
                     me</a>
-                <a href="#" class="py-5 px-3 md:mx-5 text-gray-600 hover:text-black transition duration-200">Works</a>
-                <a href="#" class="py-5 px-3 md:mx-5 text-gray-600 hover:text-black transition duration-200">Contact
+                <a href="../pages/works.html" class="nav-item">Works</a>
+                <a href="#" class="nav-item">Contact
                     me</a>
             </div>
 
@@ -61,7 +61,7 @@
         <!---mobil menu-->
         <div class="mobile-menu hidden md:hidden mr-2 transition-all ease-out duration-500">
             <a href="../index.html" class="block py-5 px-3">About me</a>
-            <a href="#" class="block py-5 px-3">Works</a>
+            <a href="../pages/works.html" class="block py-5 px-3">Works</a>
             <a href="#" class="block py-5 px-3">Contact
                 me</a>
         </div>
@@ -79,15 +79,15 @@
                 Are you planning to make a logo,business card of your own?
             </p>
             <button
-                class="mx-auto mt-4 md:mt-12 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full w-32 transform duration-100">
+                class="btn-reg">
                 Contact me
             </button>
         </div>
 
         <div class="mx-auto max-w-4xl grid grid-cols-3 place-content-center auto-cols-max gap-4 p-6">
             <div class="container">
-                <div
-                    class="mx-auto h-20 w-20 rounded-full bg-gray-200 flex items-center justify-around hover:shadow-md transition duration-100">
+                <div class="social-btn"
+                    id="instagram">
                     <img src="../assets/social/instagram-logo.svg" alt="" class="h-8">
                 </div>
                 <div class="mx-auto text-center mt-3">
@@ -98,7 +98,7 @@
             </div>
             <div class="container">
                 <div
-                    class="mx-auto h-20 w-20 rounded-full bg-gray-200 flex items-center justify-around hover:shadow-md transition duration-100">
+                    class="social-btn" id="facebook">
                     <img src="../assets/social/facebook-logo.svg" alt="" class="h-8">
                 </div>
                 <div class="mx-auto text-center mt-3">
@@ -109,7 +109,7 @@
             </div>
             <div class="container">
                 <div
-                    class="mx-auto h-20 w-20 rounded-full bg-gray-200 flex items-center justify-around hover:shadow-md transition duration-100">
+                    class="social-btn" id="linkedin">
                     <img src="../assets/social/linkedin-logo.svg" alt="" class="h-8">
                 </div>
                 <div class="mx-auto text-center mt-3">
@@ -154,7 +154,24 @@
             </div>
         </div>
     </section>
+    <script>
+        var instagram_btn = document.getElementById("instagram");
+        var facebook_btn = document.getElementById("facebook");
+        var linkedin_btn = document.getElementById("linkedin");
 
+        instagram_btn.addEventListener("click", function () {
+            window.open("https://www.instagram.com/afsansarwer")
+        });
+        
+        facebook_btn.addEventListener("click",function(){
+            window.open("https://www.facebook.com/afsan.sarwer");
+        });
+
+        linkedin_btn.addEventListener("click",function(){
+            window.open("https://www.linkedin.com/in/afsansarwer");
+        })
+
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.social-btn{
+    @apply mx-auto h-20 w-20 rounded-full bg-gray-200 flex items-center justify-around hover:shadow-md transition duration-100;
+}
+.btn-reg{
+    @apply mx-auto mt-4 md:mt-12 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full w-32 transform duration-100;
+}
+.nav-item{
+    @apply py-5 px-3 md:mx-5 text-gray-600 hover:text-black transition duration-200;
+}
